@@ -1,73 +1,97 @@
-# Welcome to your Lovable project
+# Dia's Portfolio
 
-## Project info
+A modern, responsive developer portfolio built with React, TypeScript, Vite, Tailwind CSS, and shadcn/ui.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Overview
 
-## How can I edit this code?
+This portfolio presents:
 
-There are several ways of editing your application.
+- Hero / introduction section
+- Skills section
+- Education section
+- Projects & experience section
+- Interests section
+- Contact section
 
-**Use Lovable**
+It also includes a built-in French/English language toggle through a dedicated language context.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- React 18
+- TypeScript
+- Vite 5
+- Tailwind CSS
+- shadcn/ui + Radix UI
+- Framer Motion
+- Vitest + Testing Library
 
-**Use your preferred IDE**
+## Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Node.js 18+ (recommended)
+- npm
 
-Follow these steps:
+### Installation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```bash
+git clone <your-repository-url>
+cd Dia-s-portfolio
+npm install
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Run in development
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open the URL shown in your terminal (usually `http://localhost:5173`).
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Available Scripts
 
-**Use GitHub Codespaces**
+- `npm run dev` — start the Vite development server
+- `npm run build` — create a production build
+- `npm run build:dev` — build in development mode
+- `npm run preview` — preview the production build locally
+- `npm run lint` — run ESLint
+- `npm run test` — run tests once with Vitest
+- `npm run test:watch` — run Vitest in watch mode
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```text
+src/
+  components/
+    HeroSection.tsx
+    SkillsSection.tsx
+    EducationSection.tsx
+    ProjectsSection.tsx
+    InterestsSection.tsx
+    ContactSection.tsx
+    ui/
+  contexts/
+    LanguageContext.tsx
+  pages/
+    Index.tsx
+    NotFound.tsx
+```
 
-This project is built with:
+## Customization
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- Main landing page composition: `src/pages/Index.tsx`
+- Language content and translation keys: `src/contexts/LanguageContext.tsx`
+- Global styles: `src/index.css` and `src/App.css`
+- Public assets: `public/images/`
 
-## How can I deploy this project?
+## Build & Deploy
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+```bash
+npm run build
+```
 
-## Can I connect a custom domain to my Lovable project?
+The generated static files are in `dist/` and can be deployed to platforms like Vercel, Netlify, GitHub Pages, or any static hosting service.
 
-Yes, you can!
+## License
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This project is currently unlicensed. Add a `LICENSE` file if you want to define usage terms.
